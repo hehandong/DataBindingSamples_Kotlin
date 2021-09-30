@@ -70,5 +70,10 @@
             android:onClick="startActivity13"
             android:text="ObservableArrayList" />
 
+        <Button
+            style="@style/BtnStyle"
+            android:onClick="startActivity15"
+            android:text="LiveData--ViewModel" />
+
     </LinearLayout>
 </ScrollView>

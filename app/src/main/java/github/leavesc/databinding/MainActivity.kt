@@ -83,4 +83,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(MainActivity13::class.java)
     }
 
+    fun startActivity15(view: View) {
+        startActivity(MainActivity15::class.java)
+    }
+
 }
