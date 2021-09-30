@@ -22,11 +22,14 @@ class MainActivity15 : AppCompatActivity() {
         // Create the observer which updates the UI.
         val nameObserver = Observer<String> { newName ->
             // Update the UI, in this case, a TextView.
-            tv_firstname.text = newName
+            binding.tvFirstname.text = newName
         }
 
         // Observe the LiveData, passing in this activity as the LifecycleOwner and the observer.
-        model.currentName.observe(this, nameObserver)
+//        model.currentName.observe(this, nameObserver)
+        model.currentName.observe(this,{
+            binding.tvFirstname.text = it
+        })
         binding.handlers = MyHandlers(model)
 
     }
